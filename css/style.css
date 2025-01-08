@@ -33,7 +33,7 @@ body {
   
   /* About Me Section */
   .profile-img {
-    width: 150px;
+    height: 200px;
     border: 2px solid #ddd;
     margin-right: 20px;
     float: left;
