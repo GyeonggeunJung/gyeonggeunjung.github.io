@@ -8,12 +8,22 @@
   <script src="js/main.js" defer></script>
 </head>
 <body>
-  <!-- Name Section -->
-  <section id="name-section" class="name-section">
-    <div class="container">
-      <h1>Gyeonggeun Jung</h1>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-left">
+        <h1 class="site-name">Gyeonggeun Jung</h1>
+      </div>
+      <nav class="navbar-right">
+        <ul class="nav-links">
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#honors">Honors</a></li>
+        </ul>
+      </nav>
     </div>
-  </section>
+  </header>
 
   <!-- Main Content -->
   <main>
@@ -21,19 +31,40 @@
     <div class="container">
       <section id="about-me" class="about-me">
         <div class="about-container">
+          <!-- Profile Image -->
           <img src="img/IMG2.jpeg" alt="Your Photo" class="profile-img">
+
+          <!-- About Text -->
           <div class="about-text">
             <h2>About Me</h2>
             <p>
               I am a Master's student at KAIST (Korea Advanced Institute of Science and Technology), majoring in Electrical Engineering.
               I graduated from Korea University with a Bachelor's degree in Electrical Engineering.
               My research interests include NPU and PIM interconnects, as well as other topics related to computer architecture.
-            </p>            
-            <!-- 추가: 파일 열기 섹션 -->
+              
+            </p>
+            <p class = "etc">
+              Office : N1 518 Kim Byeong-ho IT building<br>
+              Email : <a onclick="copyEmailToClipboard()">gyeonggeun@kaist.ac.kr</a>
+            </p>
+
+            <!-- Contact and Links -->
             <div id="open-files" class="open-files">
               <ul>
-                <li>Email me at <a href="mailto: wjdrudrms1206@gmail.com">wjdrudrms1206@gmail.com</a>.
-                <li><a href="files/CV_Gyeonggeun.pdf" target="_blank">Open my CV!</a></li>
+                <li>
+                  <a href="https://www.linkedin.com/in/gyeonggeunjung1206" target="_blank">
+                    <img src="img/logo/linkedin_icon.png" alt="LinkedIn" class="social-logo">
+                  </a>            
+                </li>    
+                <a href="https://github.com/gyeonggeunjung" target="_blank">
+                    <img src="img/logo/github_icon.png" alt="GitHub" class="social-logo">
+                </a>
+                </li>
+                <li>
+                  <a href="files/cv_gyeonggeun.pdf" target="_blank" >
+                    <img src="img/logo/cv_icon.png" alt="View CV" class="social-logo">
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -56,14 +87,16 @@
         <!-- Experience content will be dynamically loaded here -->
       </section>
     </div>
-  </main>
-    <!-- Awards & Honors Section -->
+
+    <!-- Honors Section -->
     <div class="container">
       <section id="honors" class="honors">
         <h2>Awards & Honors</h2>
         <!-- Honors content will be dynamically loaded here -->
       </section>
     </div>
+  </main>
+
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Gyeonggeun Jung. All Rights Reserved.</p>

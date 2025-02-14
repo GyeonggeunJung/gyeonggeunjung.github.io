@@ -36,3 +36,23 @@ document.addEventListener("DOMContentLoaded", () => {
     addToggleFunctionality("honor-item", "honor-header");
   });
 });
+
+function copyEmailToClipboard() {
+  const email = "gyeonggeun@kaist.ac.kr";
+
+  // 임시 텍스트 입력 요소 생성
+  const tempInput = document.createElement("input");
+  tempInput.value = email;
+  document.body.appendChild(tempInput);
+
+  // 텍스트 복사
+  tempInput.select();
+  tempInput.setSelectionRange(0, 99999); // 모바일 대응
+  document.execCommand("copy");
+
+  // 임시 요소 제거
+  document.body.removeChild(tempInput);
+
+  // 알림 표시
+  alert("Email address copied!");
+}
