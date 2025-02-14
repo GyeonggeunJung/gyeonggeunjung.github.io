@@ -6,6 +6,8 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    color: #000000;
+
   }
   
   /* Name Section */
@@ -14,6 +16,7 @@ body {
     color: #000000;
     box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
     border-bottom: 3px solid #ffffff;
+    color: #000000;
   }
   
   .name-section h1 {
@@ -28,7 +31,7 @@ body {
     margin: 20px auto;
     padding: 20px;
     max-width: 800px;
-    background: #f9f9f9;
+    background: #fffe;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -36,16 +39,17 @@ body {
   }
   
   /* About Me Section */
-  .profile-img {
-    height: 250px;
-    border: 1px solid #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-right: 20px;
-    float: left;
-  }
   .about-container {
     display: flex;
-    align-items: center; /* 이미지와 텍스트를 수직 정렬 */
+    flex-direction: row-reverse; /* 이미지와 텍스트 위치 변경 */
+    align-items: center; /* 수직 정렬 */
+    gap: 20px; /* 텍스트와 이미지 사이의 간격 */
+}
+
+.profile-img {
+    width: 150px; /* 원하는 크기로 조정 가능 */
+    height: auto;
+    object-fit: cover;
 }
 
   .about-text {
@@ -53,19 +57,18 @@ body {
   }
   
   /* Education and Experience */
-  .school-header, .job-header {
+  .school-header, .job-header, .honor-header{
     display: flex;
     justify-content: space-between;
     cursor: pointer;
     padding: 10px;
-    background: #f4f4f4;
-    border: 1px solid #ddd;
+    background: #f1f8ff;
     border-radius: 5px;
     line-height: 1.6;
   }
   
-  .school-header:hover, .job-header:hover {
-    background: #e8e8e8;
+  .school-header:hover, .job-header:hover, .honor-header:hover {
+    background: #deefff;
   }
   
   .details {
@@ -86,7 +89,7 @@ body {
   
   .date {
     font-size: 0.9rem;
-    color: #666;
+    color: #000000  !important;
     text-align: right !important;
     font-family: 'Source Code Pro', monospace;
   }
@@ -137,21 +140,6 @@ a:visited {
 /* Awards & Honors Section */
 .honor-item {
   margin-bottom: 20px;
-}
-
-.honor-header {
-  display: flex;
-  justify-content: space-between; /* 양쪽 정렬 */
-  cursor: pointer;
-  padding: 10px;
-  background: #f4f4f4;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  line-height: 1.6;
-}
-
-.honor-header:hover {
-  background: #e8e8e8;
 }
 
 .achievement {
