@@ -1,6 +1,6 @@
 /* Global Styles */
 body {
-    font-family: 'AppleGothic';  
+    font-family: "Overlock", serif;  
     /*font-family: 'Nunito Sans', sans-serif; */ 
     font-weight: 300;
     line-height: 1.6;
@@ -91,13 +91,13 @@ body {
     font-size: 0.9rem;
     color: #000000  !important;
     text-align: right !important;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Source Code Pro', monospace !important;
+    font-weight: 700
   }
   .etc {
     font-size: 0.9rem;
     color: #000000;
-    text-align: left;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Source Code Pro', monospace, !important;
   }
   /* Education and Experience Items */
 .education-item,
@@ -219,7 +219,6 @@ a:visited {
 }
 
 .navbar-left .site-name {
-  font-family: 'Nunito Sans', sans-serif;  
   font-weight: 500;  
   font-size: 1.5rem;
 
@@ -278,6 +277,8 @@ a:visited {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
   border-radius: 2px; /* 둥근 모서리 */
   text-align: center;
+  background-color: transparent;
+
 }
 
 /* Hover 효과 */
