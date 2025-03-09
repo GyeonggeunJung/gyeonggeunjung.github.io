@@ -43,32 +43,32 @@ body {
     flex-direction: row-reverse; /* 이미지와 텍스트 위치 변경 */
     align-items: center; /* 수직 정렬 */
     gap: 20px; /* 텍스트와 이미지 사이의 간격 */
-}
+  }
 
-.profile-img {
-    width: 150px; /* 원하는 크기로 조정 가능 */
-    height: auto;
-    object-fit: cover;
-}
+  .profile-img {
+      width: 150px; /* 원하는 크기로 조정 가능 */
+      height: auto;
+      object-fit: cover;
+  }
 
   .about-text {
     overflow: hidden;
   }
   
   /* Education and Experience */
-  .school-header, .job-header, .honor-header{
+  .school-header, .job-header, .honor-header, .publications-header {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
     padding: 10px;
-    background: #f1f8ff;
+    background: #cce2cb;
     border-radius: 5px;
     line-height: 1.6;
     transition: background-color 0.3s ease-in-out; /* 0.3초 동안 부드러운 전환 */
   }
   
-  .school-header:hover, .job-header:hover, .honor-header:hover {
-    background: #d4e8fc;
+  .school-header:hover, .job-header:hover, .honor-header:hover, .publications-header:hover {
+    background: #b6cfb6;
   }
   
   .details {
@@ -83,31 +83,29 @@ body {
     padding-left: 20px;
   }
   
-  .details ul ul {
-    list-style: circle;
-  }
-  
   .date {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #000000  !important;
     text-align: right !important;
     font-family: 'Source Code Pro', monospace;
-    font-weight: 500
+    font-weight: 400;
+    display: block;
+    margin-left: auto;
   }
+
   .etc {
     font-size: 0.9rem;
     color: #000000;
     font-family: 'Source Code Pro', monospace;
-    font-weight: 500
+    font-weight: 400
 
   }
   /* Education and Experience Items */
-.education-item,
-.experience-item {
-  margin-bottom: 20px; /* 각 항목 간의 간격 */
-}
-  .education-item.open .details,
-  .experience-item.open .details {
+  .education-item, .experience-item, .honor-item, .publications-item {
+    margin-bottom: 20px; /* 각 항목 간의 간격 */
+  }
+
+  .education-item.open .details, .experience-item.open .details, .honor-item.open .details, .publications-item.open .details {
     display: block;
   }
 
@@ -139,41 +137,11 @@ a:hover {
 a:visited {
   color: #000000;
 }
-/* Awards & Honors Section */
-.honor-item {
-  margin-bottom: 20px;
-}
 
-.achievement {
-  font-size: 1rem;
-  color: #333;
-  text-align: right;
-}
-
-.details {
-  margin-left: 20px;
-  padding: 10px 0;
-  display: none; /* 기본적으로 숨김 */
-}
-
-.details ul {
-  list-style: disc;
-  margin: 0;
-  padding-left: 20px;
-}
-
-.date {
-  font-size: 0.9rem;
-  color: #000000;
-  text-align: left;
-}
-
-.honor-item.open .details {
-  display: block; /* 펼쳐졌을 때 보이게 함 */
-}
 /* Open Files Section */
 .open-files {
   margin-top: 20px; /* 상단 간격 */
+  text-align: right;
 }
 
 .open-files h3 {
@@ -181,8 +149,11 @@ a:visited {
 }
 
 .open-files ul {
-  list-style: none; /* 리스트 스타일 제거 */
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .open-files li {
@@ -288,10 +259,13 @@ a:visited {
   background-color: #a5a5a5; /* 링크 기본 색상 */
   opacity: 0.9; /* 약간 투명 효과 */
   text-decoration: none !important; /* 밑줄 제거 */
-
 }
 
 .social-logo {
   width: 30px;  /* 원하는 크기로 조정 가능 */
   height: auto;
+}
+
+ul li::marker {
+  font-size: 0.75em; /* 기본 글자 크기의 75% 크기로 조절 */
 }

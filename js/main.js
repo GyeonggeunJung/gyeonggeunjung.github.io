@@ -35,6 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
   loadContent("honors", "honor.html", () => {
     addToggleFunctionality("honor-item", "honor-header");
   });
+
+  loadContent("publications", "publications.html", () => {
+    addToggleFunctionality("publications-item", "publications-header");
+  });
 });
 
 function copyEmailToClipboard() {
