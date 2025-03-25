@@ -282,17 +282,22 @@ a:visited {
 ul li::marker {
   font-size: 0.75em; /* 기본 글자 크기의 75% 크기로 조절 */
 }
+.mobile-only {
+  display: none;
+}
 
+.desktop-only {
+  display: inline;
+}
 @media screen and (max-width: 600px) {
   .about-container {
     flex-direction: column; /* 이미지와 텍스트를 위아래로 */
     align-items: center;     /* 가운데 정렬 */
-    text-align: left;      /* 텍스트도 가운데 정렬 */
   }
 
   .profile-img {
     width: 40%;              /* 이미지 크기 줄이기 */
-    margin-bottom: 1rem;     /* 텍스트와의 간격 */
+    margin-bottom: 0.1rem;     /* 텍스트와의 간격 */
   }
 
   .about-text {
@@ -304,6 +309,16 @@ ul li::marker {
   }
   
   .navbar-right .nav-links {
+    display: none;
+  }
+  .job-header {
+    gap: 1rem; /* 요소 사이 간격 */
+  }
+  .mobile-only {
+    display: inline;
+  }
+
+  .desktop-only {
     display: none;
   }
 }
