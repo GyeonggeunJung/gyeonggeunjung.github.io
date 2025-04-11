@@ -7,11 +7,12 @@ body {
     margin: 0;
     padding: 0;
     color: #000000;
-
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
-  /* Name Section */
-  .name-section {
+/* Name Section */
+.name-section {
     text-align: center;
     color: #000000;
     box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
@@ -19,47 +20,48 @@ body {
     color: #000000;
   }
   
-  .name-section h1 {
+.name-section h1 {
     margin: 0;
     font-size: 1rem;
     font-weight: 300;
-  }
-  
-  /* Container */
-  .container {
+}
+
+/* Container */
+.container {
     margin: 20px auto;
-    padding: 20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
     max-width: 800px;
     background: #fffe;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden; /* 컨테이너 내부에 초과된 내용을 숨김 */
-  }
-  
-  /* About Me Section */
-  .about-container {
+}
+
+/* About Me Section */
+.about-container {
     display: flex;
     flex-direction: row-reverse; /* 이미지와 텍스트 위치 변경 */
     align-items: center; /* 수직 정렬 */
     gap: 20px; /* 텍스트와 이미지 사이의 간격 */
-  }
+}
 
-  .profile-img {
+.profile-img {
       width: 150px; /* 원하는 크기로 조정 가능 */
       height: auto;
       object-fit: cover;
-  }
+}
 
-  .about-text {
+.about-text {
     overflow: hidden;
-  }
-  
-  /* Education and Experience */
-  .school-header, 
-  .job-header, 
-  .honor-header, 
-  .publications-header {
+}
+
+/* Education and Experience */
+.school-header, 
+.job-header, 
+.honor-header, 
+.publications-header {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
@@ -68,60 +70,60 @@ body {
     border-radius: 5px;
     line-height: 1.6;
     transition: background-color 0.3s ease-in-out; /* 0.3초 동안 부드러운 전환 */
-  }
-  
-  .school-header:hover, 
-  .job-header:hover, 
-  .honor-header:hover, 
-  .publications-header:hover {
+}
+
+.school-header:hover, 
+.job-header:hover, 
+.honor-header:hover, 
+.publications-header:hover {
     background: #b6cfb6;
-  }
-  
-  .details {
+}
+
+.details {
     margin-left: 10px;
     padding: 10px 0;
     display: none;
-  }
-  
-  .details ul {
+}
+
+.details ul {
     list-style: disc;
     margin: 0;
     padding-left: 20px;
-  }
-  
-  .date {
+}
+
+.date {
     font-size: 0.9rem;
     color: #000000  !important;
-    text-align: right;
+    text-align: right !important;
     font-family: 'Source Code Pro', monospace;
     font-weight: 400;
     display: block;
     margin-left: auto;
-  }
+}
 
-  .etc {
+.etc {
     font-size: 0.9rem;
     color: #000000;
     font-family: 'Source Code Pro', monospace;
     font-weight: 400
-  }
+}
 
-  /* Education and Experience Items */
-  .education-item, 
-  .experience-item, 
-  .honor-item, 
-  .publications-item {
+/* Education and Experience Items */
+.education-item, 
+.experience-item, 
+.honor-item, 
+.publications-item {
     margin-bottom: 20px; /* 각 항목 간의 간격 */
-  }
+}
 
-  .education-item.open .details, 
-  .experience-item.open .details, 
-  .honor-item.open .details, 
-  .publications-item.open .details {
+.education-item.open .details, 
+.experience-item.open .details, 
+.honor-item.open .details, 
+.publications-item.open .details {
     display: block;
-  }
+}
 
-  footer {
+footer {
     text-align: center;
     padding: 10px 0;
     background: #333;
@@ -129,9 +131,9 @@ body {
     position: relative;
     bottom: 0;
     width: 100%;
-  }
+}
 
-  /* 모든 링크에 기본 스타일 적용 */
+/* 모든 링크에 기본 스타일 적용 */
 a {
   color: #000000;
   text-decoration: none;
@@ -295,9 +297,19 @@ ul li::marker {
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 10px auto; /* 마진 줄이기 */
+    max-width: 100%; /* 최대 너비를 100%로 설정 */
+  }
   .about-container {
     flex-direction: column; /* 이미지와 텍스트를 위아래로 */
-    }
+  }
 
   .profile-img {
     width: 40%;              /* 이미지 크기 줄이기 */
