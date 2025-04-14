@@ -66,7 +66,7 @@ body {
     justify-content: space-between;
     cursor: pointer;
     padding: 10px;
-    background: #cce2cb;
+    background: #d2dee9;
     border-radius: 5px;
     line-height: 1.6;
     transition: background-color 0.3s ease-in-out; /* 0.3초 동안 부드러운 전환 */
@@ -76,7 +76,7 @@ body {
 .job-header:hover, 
 .honor-header:hover, 
 .publications-header:hover {
-    background: #b6cfb6;
+    background: #b6c3cf;
 }
 
 .details {
@@ -236,7 +236,7 @@ a:visited {
 }
 
 .navbar-right .nav-links a:hover {
-  color: #ff0000; /* Hover 시 색상 변경 (파란색) 007BFF*/
+  color: #0051ff; /* Hover 시 색상 변경 (파란색) 007BFF*/
 }
 
 /* Contact and Links Section */
