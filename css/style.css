@@ -66,7 +66,7 @@ body {
     justify-content: space-between;
     cursor: pointer;
     padding: 10px;
-    background: #d2dee9;
+    background: #d2e9e1;
     border-radius: 5px;
     line-height: 1.6;
     transition: background-color 0.3s ease-in-out; /* 0.3초 동안 부드러운 전환 */
@@ -76,7 +76,7 @@ body {
 .job-header:hover, 
 .honor-header:hover, 
 .publications-header:hover {
-    background: #b6c3cf;
+    background: #b8dbce;
 }
 
 .details {
