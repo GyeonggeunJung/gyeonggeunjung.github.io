@@ -31,7 +31,7 @@ body {
     margin: 20px auto;
     padding-left: 1rem;
     padding-right: 1rem;
-    max-width: 800px;
+    max-width:900px;
     background: #fffe;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -66,7 +66,7 @@ body {
     justify-content: space-between;
     cursor: pointer;
     padding: 10px;
-    background: #d2e9e1;
+    background: #b6cde9;
     border-radius: 5px;
     line-height: 1.6;
     transition: background-color 0.3s ease-in-out; /* 0.3초 동안 부드러운 전환 */
@@ -76,7 +76,7 @@ body {
 .job-header:hover, 
 .honor-header:hover, 
 .publications-header:hover {
-    background: #b8dbce;
+  background: #a5b9d1;
 }
 
 .details {
@@ -122,7 +122,10 @@ body {
 .publications-item.open .details {
     display: block;
 }
-
+.author {
+    text-decoration: underline;
+    font-weight: 600;
+}
 footer {
     text-align: center;
     padding: 10px 0;
@@ -137,7 +140,6 @@ footer {
 a {
   color: #000000;
   text-decoration: none;
-  transition: color 0.1s ease;
 }
 
 /* 마우스를 올렸을 때 */
