@@ -1,14 +1,12 @@
 /* Global Styles */
 body {
-    font-family: "Quicksand", serif;  
+    font-family: "Roboto", sans-serif;  
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     color: #000000;
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 
 /* Name Section */
@@ -28,17 +26,21 @@ body {
 
 /* Container */
 .container {
-    margin: 20px auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    max-width:900px;
-    background: #fffe;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* 컨테이너 내부에 초과된 내용을 숨김 */
-}
+    margin: 1rem  auto;
+    padding: 0rem 1rem;
+    scrollbar-width: 100px;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5);
 
+    overflow: hidden;
+}
 /* About Me Section */
 .about-container {
     display: flex;
@@ -65,11 +67,20 @@ body {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    padding: 10px;
+    padding: 10px 15px;
     background: #b6cde9;
     border-radius: 5px;
     line-height: 1.6;
     transition: background-color 0.3s ease-in-out; /* 0.3초 동안 부드러운 전환 */
+    border-radius: 24px;
+
+    border: 1px solid b6cde9;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .school-header:hover, 
@@ -98,7 +109,7 @@ body {
     font-family: 'Source Code Pro', monospace;
     font-weight: 400;
     display: block;
-    margin-left: auto;
+    margin-right: 1rem;
 }
 
 .etc {
@@ -191,13 +202,22 @@ a:visited {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff; /* 흰색 배경 */
-  color: #000000; /* 글씨 색상 변경 */
+  background: rgba(255, 255, 255, 0.25);
+  color: #000000;
+
   padding: 10px 20px;
   position: sticky;
-  top: 0;
+  top: 10px;          
+  margin-top: 10px;   
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  border-radius: 24px;
+  backdrop-filter: blur(5px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(150%);
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  
 }
 
 .navbar-container {
@@ -205,14 +225,15 @@ a:visited {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  
 }
 
 .navbar-left .site-name {
-  font-weight: 400;  
-  font-size: 1.5rem;
-  font-family: 'Quicksand', sans-serif;  
+  font-weight: 500;  
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;  
   margin: 0;
-  color: #000000; /* 이름 글씨 색상 */
+  color: #000000;
 }
 
 .navbar-right .nav-links {
@@ -232,16 +253,15 @@ a:visited {
   color: #000000; /* 링크 기본 색상 */
   text-decoration: none;
   font-size: 1.2rem;
-  font-family: 'Quicksand', sans-serif;  
-  font-weight: 300;
+  font-family: 'Roboto', sans-serif;  
+  font-weight: 400;
   transition: color 0.3s ease;
 }
 
 .navbar-right .nav-links a:hover {
-  color: #0051ff; /* Hover 시 색상 변경 (파란색) 007BFF*/
+  color: #0051ff; 
 }
 
-/* Contact and Links Section */
 .open-files ul {
   list-style: none;
   padding: 0;
@@ -255,7 +275,6 @@ a:visited {
   display: inline-block;
 }
 
-/* Button Styles */
 .button {
   display: inline-block;
   padding: 4px 15px;
@@ -263,9 +282,9 @@ a:visited {
   color: #000000 !important;
   background: #e5e4e4;
   text-decoration: none;
-  transition: all 0.3s ease; /* 부드러운 전환 효과 */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
-  border-radius: 2px; /* 둥근 모서리 */
+  transition: all 0.3s ease; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
   text-align: center;
   background-color: transparent;
 
@@ -273,18 +292,18 @@ a:visited {
 
 /* Hover 효과 */
 .button:hover {
-  background-color: #a5a5a5; /* 링크 기본 색상 */
-  opacity: 0.9; /* 약간 투명 효과 */
-  text-decoration: none !important; /* 밑줄 제거 */
+  background-color: #a5a5a5; 
+  opacity: 0.9; 
+  text-decoration: none !important;
 }
 
 .social-logo {
-  width: 30px;  /* 원하는 크기로 조정 가능 */
+  width: 30px;
   height: auto;
 }
 
 ul li::marker {
-  font-size: 0.75em; /* 기본 글자 크기의 75% 크기로 조절 */
+  font-size: 0.75em;
 }
 .mobile-only {
   display: none;
@@ -306,19 +325,19 @@ ul li::marker {
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
-    margin: 10px auto; /* 마진 줄이기 */
-    max-width: 100%; /* 최대 너비를 100%로 설정 */
+    margin: 10px auto;
+    max-width: 100%;
   }
   .about-container {
-    flex-direction: column; /* 이미지와 텍스트를 위아래로 */
+    flex-direction: column; 
   }
 
   .profile-img {
-    width: 40%;              /* 이미지 크기 줄이기 */
+    width: 40%;              
   }
 
   .about-text {
-    padding: 0 1rem;         /* 좌우 여백 추가 */
+    padding: 0 1rem;      
   }
 
   .navbar-left .site-name {
@@ -329,7 +348,7 @@ ul li::marker {
     display: none;
   }
   .job-header {
-    gap: 1rem; /* 요소 사이 간격 */
+    gap: 1rem; 
   }
   .mobile-only {
     display: inline;

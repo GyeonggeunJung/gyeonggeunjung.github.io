@@ -60,3 +60,29 @@ function copyEmailToClipboard() {
   // 알림 표시
   alert("Email address copied!");
 }
+
+// Smooth scroll with offset for sticky navbar
+document.addEventListener('DOMContentLoaded', function () {
+  const navbar = document.querySelector('.navbar');
+  const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+
+  if (!navbar || !navLinks.length) return;
+
+  const offset = navbar.offsetHeight + 25; // navbar 높이 + 10px 여유
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const id = this.getAttribute('href').slice(1);
+      const target = document.getElementById(id);
+      if (!target) return;
+
+      const targetTop = target.getBoundingClientRect().top + window.pageYOffset;
+
+      window.scrollTo({
+        top: targetTop - offset,
+        behavior: 'smooth'
+      });
+    });
+  });
+});
