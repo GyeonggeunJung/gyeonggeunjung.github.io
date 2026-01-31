@@ -2,7 +2,7 @@
 body {
     font-family: "Roboto", sans-serif;  
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -112,6 +112,14 @@ body {
     margin-right: 1rem;
 }
 
+.link {
+  font-size: 0.9rem;
+  color: #000000  !important;
+  text-align: right !important;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 30;
+}
+
 .etc {
     font-size: 0.9rem;
     color: #000000;
@@ -182,7 +190,16 @@ a:visited {
   padding: 0;
   margin: 0;
 }
+.site-logo {
+  height: 32px;
+  width: auto;
+  margin-right: 8px;
+}
 
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
 .open-files li {
   margin-bottom: 10px 0;
 }
@@ -202,8 +219,12 @@ a:visited {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.5);
   color: #000000;
+  margin: auto;
+  scrollbar-width: 100px;
+  max-width: 900px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
 
   padding: 10px 20px;
   position: sticky;
@@ -321,6 +342,9 @@ ul li::marker {
   body {
     padding-left: 1rem;
     padding-right: 1rem;
+    font-family: "Roboto", sans-serif;  
+    font-weight: 400;
+    font-size: 1rem;
   }
   .container {
     padding-left: 1rem;
